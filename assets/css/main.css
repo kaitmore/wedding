@@ -1125,6 +1125,7 @@ body.is-preload #main {
   color: rgba(255, 255, 255, 0.75);
   cursor: default;
   text-align: center;
+  font-size: 12px;
 }
 
 #footer .copyright {
