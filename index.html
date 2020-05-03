@@ -1,91 +1,168 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Identity by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>Identity by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <script>
+      let isFlipped = false;
+      function flipcard() {
+        const card = document.getElementById("flip-card-inner");
+        if (isFlipped) {
+          card.style.transform = "none";
+        } else {
+          card.style.transform = "rotateY(180deg)";
+        }
+        isFlipped = !isFlipped;
+      }
+    </script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <div id="flip-card-inner">
+        <!-- Main -->
+        <section id="main">
+          <header>
+            <span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+            <h1>Alexandra & Kaitlin</h1>
+            <p>September 5th, 2020 4pm</p>
+          </header>
+          <footer>
+            <ul class="icons">
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfDIZa5YhB7GJBRNTVx0W6EcpsDuSvBqqSicIBj3yu-66CGFw/viewform?usp=sf_link"
+                  class="icon fas fa-envelope-open"
+                ></a
+                >RSVP
+              </li>
+              <li>
+                <a href="#" class="fas fa-plane" onclick="flipcard()"></a>Travel
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="https://www.amazon.com/wedding/share/kait-alexa"
+                  class="icon fas fa-gift"
+                ></a
+                >Registry
+              </li>
+            </ul>
+          </footer>
+        </section>
+        <section id="flip-card-back">
+          <header>
+            <h1>Travel</h1>
+            <p>8221 Broad Neck Road, Chestertown, MD 21620</p>
+          </header>
+          <div>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="https://bramptoninn.com/"
+                  >Brampton Bed and Breakfast Inn</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="https://www.greatoakmd.com/"
+                  >Great Oak Manor</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="https://whiteswantavern.com/"
+                  >White Swann Tavern</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="http://jlstamhouse.com/"
+                  >John Stam House</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="https://www.innatmitchellhouse.com/"
+                  >The Inn at Mitchell House</a
+                >
+              </li>
+            </ul>
+          </div>
+          <footer>
+            <ul class="icons">
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfDIZa5YhB7GJBRNTVx0W6EcpsDuSvBqqSicIBj3yu-66CGFw/viewform?usp=sf_link"
+                  class="icon fas fa-envelope-open"
+                ></a
+                >RSVP
+              </li>
+              <li>
+                <a href="#" class="fas fa-plane" onclick="flipcard()"></a>Travel
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferral"
+                  href="https://www.amazon.com/wedding/share/kait-alexa"
+                  class="icon fas fa-gift"
+                ></a
+                >Registry
+              </li>
+            </ul>
+          </footer>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="copyright">
+          <li><a href="https://kaitlinmoreno.com">&copy; Kaitlin Moreno</a></li>
+        </ul>
+      </footer>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Jane Doe</h1>
-							<p>Senior Psychonautics Engineer</p>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="field">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-								</div>
-								<div class="field">
-									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-								</div>
-								<div class="field">
-									<label>But are you a robot?</label>
-									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-								</div>
-							</div>
-							<ul class="actions special">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter">Twitter</a></li>
-								<li><a href="#" class="icon brands fa-instagram">Instagram</a></li>
-								<li><a href="#" class="icon brands fa-facebook-f">Facebook</a></li>
-							</ul>
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+    <!-- Scripts -->
+    <script>
+      if ("addEventListener" in window) {
+        window.addEventListener("load", function () {
+          document.body.className = document.body.className.replace(
+            /\bis-preload\b/,
+            ""
+          );
+        });
+        document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
+          ? " is-ie"
+          : "";
+      }
+    </script>
+  </body>
 </html>
